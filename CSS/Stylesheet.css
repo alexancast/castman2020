@@ -1,0 +1,230 @@
+
+html, body {
+  margin: 0 auto; 
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+
+#header{
+
+    background-image: linear-gradient(to bottom left, #fabb00, #f29400);
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+
+h1{
+    color: white;
+    font-family: AvenirBlack;
+    font-size: 75px;
+    margin: 0;
+}
+
+h2{
+    color: white;
+    font-family: AvenirRoman;
+    font-size: 40px;
+    margin: 0;
+}
+
+h3{
+    color: white;
+    font-family: AvenirRoman;
+    font-size: 35px;
+    margin: 0;
+    
+}
+
+@font-face{
+    font-family: AvenirBlack;
+    src: url("../Fonts/Avenir-Black-03.ttf");
+}
+
+@font-face{
+    font-family: AvenirHeavy;
+    src: url("../Fonts/Avenir-Heavy-05.ttf");
+}
+
+@font-face{
+    font-family: AvenirRoman;
+    src: url("../Fonts/Avenir-Roman-12.ttf");
+}
+
+@font-face{
+    font-family: BaskervilleStandard;
+    src: url("../Fonts/Baskerville-01.ttf");
+}
+
+@font-face{
+    font-family: BaskervilleItalic;
+    src: url("../Fonts/Baskerville-Italic-03.ttf");
+}
+
+#titleHeader{
+    float: left;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#logoHeader{
+    height: 75px;
+    width: 75px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    padding-right: 5ch;
+    padding-bottom: 5vh;
+
+}
+
+#timerPanel{
+    background-color: #006ab3;
+    text-align: center;
+}
+
+.panelTitle{
+    padding-top: 75px;
+    text-align: center;
+    animation-name: panelTitleAnimation;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+@keyframes panelTitleAnimation{
+
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+
+}
+
+.subTitle{
+    text-align: center;
+    font-family: BaskervilleStandard;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.pad{
+    
+    background: #d4cbc5;
+    border-radius: 10px;
+    
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    
+    width: 60px;
+    height: 75px;
+    
+}
+
+#timer{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding-bottom: 75px;
+    
+}
+
+.timerPadText{
+
+    color: #006ab3;
+    padding: 10px 0;    
+    
+}
+
+.timerText{
+
+    display: inline-block;
+    vertical-align: middle;
+    color: #d4cbc5;
+}
+
+.tableText{
+
+    font-family: BaskervilleStandard;
+    color: #d4cbc5;
+}
+
+#footer{
+    height: 40vh;
+    background-color: #172983;
+}
+
+.footerSegment{
+
+    padding-top: 75px;
+    padding-left: 40px;
+    text-align: left;
+    height: auto;
+    width: calc(33% - 70px);
+    display: inline-block;
+}
+
+h4{
+    color: white;
+    font-family: AvenirHeavy;
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.inputBox{
+
+    border-style: solid;
+    padding-right: 10px;
+    border-color: white;
+    border-width: 1px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background-color: #172983;
+    color: white;
+}
+
+button{
+  border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 70px;
+    height: 44px;
+    text-align: center;
+    background-color: #172983;
+    color: white;
+}
+
+
+#norrtaljeVision{
+    
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        
+        rgba(250, 187, 0, 0.9), 
+        rgba(250, 187, 0, 0.9)
+    ),
+    /* bottom, image */
+    url("../Bilder/Norrtalje/1.jpeg")0 0 no-repeat fixed;
+    background-size: cover;
+        
+    
+}
+
+#visionTitle{
+    
+}
