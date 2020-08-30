@@ -24,6 +24,14 @@ section{
     
 }
 
+#headerImage{
+
+    transform: scale(-1.5, 1.5);
+    position: fixed;
+    right: 45ch;
+    bottom: 0px;
+    
+}
 
 h1{
     color: white;
@@ -119,6 +127,7 @@ h3{
     font-family: BaskervilleStandard;
     color: white;
     padding-bottom: 25px;
+    font-size: 20px;
 }
 
 .pad{
@@ -243,6 +252,46 @@ button{
     /* box-shadow: 5px 5px 10px #f29400; */
     border-radius: 150px;
     text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #172983;
+    
+}
+
+.scale{
+    animation-duration: 1s;
+    animation-name: hexaPanelScale;
+    animation-fill-mode: forwards;
+    
+}
+
+.shrink{
+    animation-duration: 1s;
+    animation-name: hexaPanelShrink;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hexaPanelScale{
+    0% {
+        width: 275px;
+        
+    }
+
+    100% {
+        width: 500px;
+        
+    }
+}
+@keyframes hexaPanelShrink{
+    0% {
+        width: 500px;
+        
+    }
+
+    100% {
+        width: 275px;
+        
+    }
 }
 
 .hexaPanelTable{
@@ -286,6 +335,36 @@ button{
 
 #linkopingsmodellenHexaPanel{
     background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        
+        rgba(0, 106, 179, 0.9), 
+        rgba(0, 106, 179, 0.9)
+        
+    ),
+    /* bottom, image */
+    url("../Bilder/StockPhotos/Polis.jpg")0 0 no-repeat;
+    background-size: cover;
+}
+
+#treHexaPanel{
+
+background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        
+        rgba(0, 106, 179, 0.9), 
+        rgba(0, 106, 179, 0.9)
+        
+    ),
+    /* bottom, image */
+    url("../Bilder/StockPhotos/Sjukvard.jpg")0 0 no-repeat;
+    background-size: cover;
+
+}
+
+#fyraHexaPanel{
+background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
         

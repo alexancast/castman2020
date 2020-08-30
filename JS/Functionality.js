@@ -5,7 +5,32 @@ window.onload = function ()
 
     observer.observe(document.getElementById("visionTitle"));
 
+    setupHexaAnimations(document.getElementById("linkopingsmodellenHexaPanel"));
+    setupHexaAnimations(document.getElementById("cameraHexaPanel"));
+    setupHexaAnimations(document.getElementById("treHexaPanel"));
+    setupHexaAnimations(document.getElementById("fyraHexaPanel"));
+
+
+
 };
+
+function setupHexaAnimations(element)
+{
+
+    element.onmouseover = function ()
+    {
+        element.classList.remove("shrink");
+        element.classList.add("scale");
+    }
+
+    element.onmouseleave = function ()
+    {
+        element.classList.remove("scale");
+        element.classList.add("shrink");
+    }
+
+}
+
 
 
 var countdownDate = new Date("Sep 11, 2022 20:00:00").getTime();
