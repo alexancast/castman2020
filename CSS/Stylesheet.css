@@ -73,6 +73,7 @@ h3{
 }
 
 #titleHeader{
+    
     float: left;
     padding-left: 100px;
     padding-top: 50px;
@@ -97,11 +98,13 @@ h3{
 }
 
 .panelTitle{
+    font-family: AvenirBlack;
+    font-size: 50px;
     padding-top: 75px;
     text-align: center;
     animation-name: panelTitleAnimation;
     animation-duration: 2s;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
 }
 
 @keyframes panelTitleAnimation{
@@ -209,7 +212,7 @@ button{
 }
 
 
-#norrtaljeVision{
+#USP{
     
     background: 
     /* top, transparent red, faked with gradient */ 
@@ -227,4 +230,70 @@ button{
 
 #visionTitle{
     
+}
+
+/* #USP{
+    background-color: #fabb00;
+} */
+
+.hexaPanel{
+
+    width: 275px;
+    height: 275px;
+    /* box-shadow: 5px 5px 10px #f29400; */
+    border-radius: 150px;
+    text-align: center;
+}
+
+.hexaPanelTable{
+    
+    align-content: center;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 20px;
+    
+}
+
+.hexaPanelTitle{
+    
+    font-size: 4vh;
+    font-family: AvenirBlack;
+
+}
+
+.hexaPanelSubText{
+
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-family: BaskervilleStandard;
+
+}
+
+#cameraHexaPanel{
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        
+        rgba(0, 106, 179, 0.9), 
+        rgba(0, 106, 179, 0.9)
+        
+    ),
+    /* bottom, image */
+    url("../Bilder/StockPhotos/SecurityCamera.jpg")0 0 no-repeat;
+    background-size: cover;
+}
+
+#linkopingsmodellenHexaPanel{
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        
+        rgba(0, 106, 179, 0.9), 
+        rgba(0, 106, 179, 0.9)
+        
+    ),
+    /* bottom, image */
+    url("../Bilder/StockPhotos/Polis.jpg")0 0 no-repeat;
+    background-size: cover;
 }

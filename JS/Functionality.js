@@ -2,17 +2,13 @@
 
 window.onload = function ()
 {
-    var onViewAnimatedElements = document.querySelectorAll(".panelTitle");
-    onViewAnimatedElements.forEach(element =>
-    {
-        observer.observe(element);
-    });
+
+    observer.observe(document.getElementById("visionTitle"));
+
 };
 
 
-
 var countdownDate = new Date("Sep 11, 2022 20:00:00").getTime();
-
 
 // Update the count down every 1 second
 var x = setInterval(function ()
@@ -62,23 +58,8 @@ const observerOptions = {
 var observer = new IntersectionObserver(entries =>
 {
 
-    entries.forEach(element =>
-    {
-        if (element.intersectionRatio > 0)
-        {
+    console.log(entries);
 
-            // entry.style.animationPlayState = "running";
-
-
-        } else
-        {
-            console.log('out of view');
-        }
-
-
-    })
 }, observerOptions);
-
-
 
 
