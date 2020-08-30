@@ -17,7 +17,7 @@ window.onload = function ()
 function setupHexaAnimations(element)
 {
 
-    element.onmouseover = function ()
+    element.onmouseenter = function ()
     {
         element.classList.remove("shrink");
         element.classList.add("scale");
@@ -83,7 +83,7 @@ const observerOptions = {
 var observer = new IntersectionObserver(entries =>
 {
 
-    console.log(entries);
+
 
 }, observerOptions);
 

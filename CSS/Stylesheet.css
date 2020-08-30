@@ -11,6 +11,7 @@ section{
     height: 100vh;
     scroll-snap-align: start;
     position: relative;
+    justify-content: center;
 }
 
 
@@ -26,17 +27,19 @@ section{
 
 #headerImage{
 
-    transform: scale(-1.5, 1.5);
+    width: 60vh;
+    transform: scaleX(-1);
     position: fixed;
-    right: 45ch;
     bottom: 0px;
+    margin-left: -20%;
+    margin-right: -20%;
     
 }
 
 h1{
     color: white;
     font-family: AvenirBlack;
-    font-size: 75px;
+    font-size: 100px;
     margin: 0;
 }
 
@@ -247,14 +250,12 @@ button{
 
 .hexaPanel{
 
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
     width: 275px;
     height: 275px;
-    /* box-shadow: 5px 5px 10px #f29400; */
-    border-radius: 150px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #172983;
+    line-height: 275px;
     
 }
 
@@ -274,23 +275,24 @@ button{
 @keyframes hexaPanelScale{
     0% {
         width: 275px;
+        height: 275px;
         
     }
 
     100% {
-        width: 500px;
-        
+        width: 350px;
+        height: 350px;
     }
 }
 @keyframes hexaPanelShrink{
     0% {
-        width: 500px;
-        
+        width: 350px;
+        height: 350px;
     }
 
     100% {
         width: 275px;
-        
+        height: 275px;
     }
 }
 
@@ -300,13 +302,16 @@ button{
     margin: 0 auto;
     border-collapse: separate;
     border-spacing: 20px;
+    height: 400px;
     
 }
 
 .hexaPanelTitle{
     
-    font-size: 4vh;
+    font-size: 3vh;
     font-family: AvenirBlack;
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 
