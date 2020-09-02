@@ -17,7 +17,23 @@ section{
 
 #header{
 
+    
     background-image: linear-gradient(to bottom left, #fabb00, #f29400);
+
+    /* background:
+        -moz-radial-gradient(#fabb00 5%, transparent 5%),
+        -moz-radial-gradient(#fabb00 5%, transparent 5%),
+        #f29400;
+    background:
+        -webkit-radial-gradient(#fabb00 5%, transparent 5%),
+        -webkit-radial-gradient(#fabb00 5%, transparent 5%),
+        #f29400;
+    background-position: 0 0, 25px 25px; */
+    
+    /* -webkit-background-size:50px 50px;
+    -moz-background-size:50px 50px;
+    background-size:50px 50px; */
+
     padding: 0;
     margin: 0;
     margin-top: 0;
@@ -91,10 +107,10 @@ h3{
 }
 
 #logoHeader{
-    height: 75px;
-    width: 75px;
+    
+    width: 10vw;
 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
 
@@ -183,11 +199,93 @@ h3{
 
 .footerSegment{
 
-    padding-top: 75px;
-    padding-left: 40px;
-    text-align: left;
-    height: auto;
-    width: calc(33% - 70px);
+    align-content: center;
+    text-align: center;
+
+    /* border-color: white;
+    border-style: dotted;
+    border-width: 2px; */
+
+    width: 33%;
+}
+
+.footerTable{
+    /* border-color: white;
+    border-style: dotted;
+    border-width: 1px; */
+
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    align-self: center;
+    border-style: solid;
+    
+}
+
+input::placeholder{
+    color: white;
+}
+
+.submitButton{
+    align-self: center;
+    background-color: white;
+    color: #172983;
+    border: none;
+    vertical-align: center;
+    margin-left: 2px;
+    height: 39px;
+    width: auto;
+    font-family: AvenirBlack;
+}
+
+#separator{
+    width: 100%;
+}
+
+#followField{
+    
+    border-collapse: separate;
+    border-spacing: 40px;
+}
+
+.socialMediaButton{
+    /* background-color: white; */
+    width: 4.5vw;
+    height: 4.5vw;
+
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    display: inline-block;
+
+}
+
+
+.socialMediaImage{
+
+    /* filter: invert(); */
+    width:60%; 
+    height:60%; 
+    padding: 20%;
+}
+
+.socialMediaButtonHovered{
+    background-color: white;
+}
+
+.socialMediaSpace{
+    
+    width: 1vw;
+    height: 1vw;
     display: inline-block;
 }
 
@@ -195,8 +293,6 @@ h4{
     color: white;
     font-family: AvenirHeavy;
     font-size: 15px;
-    margin: 0;
-    padding-bottom: 20px;
 }
 
 .inputBox{
@@ -213,7 +309,7 @@ h4{
 }
 
 button{
-  border-style: solid;
+    border-style: solid;
     border-color: white;
     border-width: 1px;
     width: 70px;
@@ -244,18 +340,14 @@ button{
     
 }
 
-/* #USP{
-    background-color: #fabb00;
-} */
-
 .hexaPanel{
 
     vertical-align: middle;
     border-radius: 50%;
     text-align: center;
-    width: 275px;
-    height: 275px;
-    line-height: 275px;
+    width: 20vw;
+    height: 20vw;
+    line-height: 20vw;
     
 }
 
@@ -274,25 +366,25 @@ button{
 
 @keyframes hexaPanelScale{
     0% {
-        width: 275px;
-        height: 275px;
+        width: 20vw;
+        height: 20vw;
         
     }
 
     100% {
-        width: 350px;
-        height: 350px;
+        width: 30vw;
+        height: 30vw;
     }
 }
 @keyframes hexaPanelShrink{
     0% {
-        width: 350px;
-        height: 350px;
+        width: 30vw;
+        height: 30vw;
     }
 
     100% {
-        width: 275px;
-        height: 275px;
+        width: 20vw;
+        height: 20vw;
     }
 }
 
@@ -353,7 +445,6 @@ button{
 }
 
 #treHexaPanel{
-
 background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(

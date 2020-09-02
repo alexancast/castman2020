@@ -1,8 +1,6 @@
 
-
 window.onload = function ()
 {
-
     observer.observe(document.getElementById("visionTitle"));
 
     setupHexaAnimations(document.getElementById("linkopingsmodellenHexaPanel"));
@@ -10,9 +8,36 @@ window.onload = function ()
     setupHexaAnimations(document.getElementById("treHexaPanel"));
     setupHexaAnimations(document.getElementById("fyraHexaPanel"));
 
+    var socialMediaButtons = document.querySelectorAll(".socialMediaButton");
+    console.log(socialMediaButtons.length);
+
+    for (let index = 0; index < socialMediaButtons.length; index++)
+    {
+
+        var child = socialMediaButtons[index].childNodes[1].childNodes[1];
+        setupSocialMediaButtons(socialMediaButtons[index], child);
+
+    }
+
 
 
 };
+
+function setupSocialMediaButtons(element, image)
+{
+    element.onmouseenter = function ()
+    {
+        element.classList.add("socialMediaButtonHovered");
+        image.src = "../Bilder/Logga/" + image.id + "Selected.png";
+
+    }
+
+    element.onmouseleave = function ()
+    {
+        element.classList.remove("socialMediaButtonHovered");
+        image.src = "../Bilder/Logga/" + image.id + ".png";
+    }
+}
 
 function setupHexaAnimations(element)
 {
@@ -30,8 +55,6 @@ function setupHexaAnimations(element)
     }
 
 }
-
-
 
 var countdownDate = new Date("Sep 11, 2022 20:00:00").getTime();
 
