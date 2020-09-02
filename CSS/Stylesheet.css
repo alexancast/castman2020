@@ -17,22 +17,7 @@ section{
 
 #header{
 
-    
     background-image: linear-gradient(to bottom left, #fabb00, #f29400);
-
-    /* background:
-        -moz-radial-gradient(#fabb00 5%, transparent 5%),
-        -moz-radial-gradient(#fabb00 5%, transparent 5%),
-        #f29400;
-    background:
-        -webkit-radial-gradient(#fabb00 5%, transparent 5%),
-        -webkit-radial-gradient(#fabb00 5%, transparent 5%),
-        #f29400;
-    background-position: 0 0, 25px 25px; */
-    
-    /* -webkit-background-size:50px 50px;
-    -moz-background-size:50px 50px;
-    background-size:50px 50px; */
 
     padding: 0;
     margin: 0;
@@ -47,15 +32,14 @@ section{
     transform: scaleX(-1);
     position: fixed;
     bottom: 0px;
-    margin-left: -20%;
-    margin-right: -20%;
+    right: 10vw;
     
 }
 
 h1{
     color: white;
     font-family: AvenirBlack;
-    font-size: 100px;
+    font-size: 20vw;
     margin: 0;
 }
 
@@ -99,18 +83,11 @@ h3{
     src: url("../Fonts/Baskerville-Italic-03.ttf");
 }
 
-#titleHeader{
-    
-    float: left;
-    padding-left: 100px;
-    padding-top: 50px;
-}
-
 #logoHeader{
     
     width: 10vw;
 
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
 
